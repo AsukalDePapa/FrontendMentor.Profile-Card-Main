@@ -1,0 +1,38 @@
+@use '../utils/fonts' as font;
+@use '../utils/functions' as f;
+@use '../utils/breakpoints' as bp;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    position: relative;
+    font-family: font.$kumbh-sans;
+    overflow: hidden;
+    // PLEASE HELP!!!
+    // background-image: url(../images/bg-pattern-top.svg), 
+    //                 url(../images/bg-pattern-bottom.svg);
+    // background-repeat: no-repeat;
+    // background-position: top left, bottom right;
+    // background-size: 40%;
+    background-color: var(--bg-clr);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
